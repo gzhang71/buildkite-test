@@ -130,3 +130,6 @@ dmypy.json
 
 # Pycharm related
 .idea/
+
+# jenkins configuration
+jenkins/jenkins_configuration/
