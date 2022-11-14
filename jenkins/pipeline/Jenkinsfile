@@ -8,10 +8,5 @@ pipeline {
                 sh 'python --version'
             }
         }
-        stage ('pipeline') {
-            steps {
-                sh 'python jenkins/pipeline/pipeline.py'
-            }
-        }
     }
 }
