@@ -1,12 +1,13 @@
 pipeline {
     agent any
     stages {
-        agent {
-            docker {
-                image 'python:3.9-alpine'
-            }
-        }
         stage ('version') {
+            agent {
+                docker {
+                    image 'python:3.9-alpine'
+                }
+            }
+
             steps {
                 sh 'python --version'
             }
