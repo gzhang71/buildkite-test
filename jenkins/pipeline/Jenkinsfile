@@ -1,12 +1,18 @@
 pipeline {
     agent any
     stages {
-        steps {
-            sh 'python3 --version'
+        stage {
+            steps {
+                sh 'python3 --version'
+            }
+        }
+        
+        stage {
+            steps {
+                sh 'python3 jenkins/pipeline/pipeline.py'
+            }
         }
 
-        steps {
-            sh 'python3 jenkins/pipeline/pipeline.py'
-        }
+
     }
 }
