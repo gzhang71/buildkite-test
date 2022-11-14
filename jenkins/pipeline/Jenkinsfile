@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage ('version') {
             steps {
-                sh 'python3 --version'
+                sh 'python --version'
             }
         }
         stage ('pipeline') {
             steps {
-                sh 'python3 jenkins/pipeline/pipeline.py'
+                sh 'python jenkins/pipeline/pipeline.py'
             }
         }
     }
